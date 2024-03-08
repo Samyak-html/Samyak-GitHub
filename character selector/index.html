@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Selector</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    *{
+        margin: 0;padding: 0;
+        
+    }
+    .selector{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .charactor{
+        width:25%;
+        height: 99.5vh;
+        background-color: black;
+        border:1px white solid;
+        position: relative;      
+        
+        
+    }
+    #char1:hover {
+        background-color: rgb(245, 8, 166);
+        .charChoosed{
+            visibility: visible;
+            margin-top: 8vh;
+        }
+        .Title{
+            top:90%;
+            color:black;
+            
+        }
+        .select{
+            background-color: red;
+            color: black;
+            border: 2px solid black;
+        }
+        
+    }
+    #char2:hover{
+        background-color: yellow;
+        .charChoosed{
+            visibility: visible;
+            margin-top: 2vh;
+        }
+        .Title{
+            top:90%;
+            color:black;
+        }
+        .select{
+            background-color: orangered;
+            color: black;
+            border: 2px solid black;
+        }
+    }
+    #char3:hover{
+        background-color: red;
+        .charChoosed{
+            visibility: visible;
+            margin-top: 7vh;
+        }
+        .Title{
+            top:90%;
+            color:black;
+        }
+        .select{
+            background-color: rgb(245, 8, 166);
+            color: black;
+            border: 2px solid black;
+        }
+    }
+    #char4:hover {
+        background-color: aqua;
+        .charChoosed{
+            visibility: visible;
+            margin-top: 6vh;
+        }
+        .Title{
+            top:90%;
+            color:black;
+        }
+        .select{
+            background-color: yellow;
+            color: black;
+            border: 2px solid black;
+        }
+    }
+    .charChoosed{
+        height: fit-content;
+        
+        width: 50vh;
+        visibility: hidden;
+        
+        /* background-size: cover; */ 
+        transition:  0.2s ease ; 
+    
+    }
+    .Title{
+        
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 1000;
+        font-size: 5vh;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 0.2px ;
+        position: absolute;
+        top:50%;
+        left:25%;
+        transition: 0.2s ease;
+       
+    }
+    .select{
+        font-size: x-large;
+        color:white;
+        position: absolute;
+        top:89%;
+        left:75%;
+        border: 2px solid white;
+        padding-left:  3vh;
+        padding-right: 3vh;
+        padding-top:1vh;
+        padding-bottom: 1vh;
+        border-radius:100%;
+        cursor: pointer;
+        transition: ease 0.2s ;
+
+    }
+    
+
+</style>
+<body>
+    <div class="selector">
+        <div class="charactor" id="char1">
+            <img src="characters/char1.png" alt="" class="charChoosed">
+            
+            <p class="Title">SHINIGAMI</p>
+            <p class="select">&#10004;</p>
+
+        </div>
+        <div class="charactor" id="char2">
+            <img src="characters/char2.png" alt="" class="charChoosed">
+            <p class="Title">SORCEROR</p>
+            <p class="select">&#10004;</p>
+
+        </div>
+        <div class="charactor" id="char3">
+            <img src="characters/char3.png" alt="" class="charChoosed">
+            <p class="Title">HUMANOID</p>
+            <p class="select">&#10004;</p>
+
+        </div>
+        <div class="charactor" id="char4">
+            <img src="characters/char4.png" alt="" class="charChoosed">
+            <p class="Title">GUNJACK</p>
+            <p class="select">&#10004;</p>
+
+        </div>
+    </div>
+</body>
+</html
